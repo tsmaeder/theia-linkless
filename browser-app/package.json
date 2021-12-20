@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "name": "browser-app",
+  "version": "0.0.0",
+  "dependencies": {
+    "@theia/core": "latest",
+    "@theia/editor": "latest",
+    "@theia/filesystem": "latest",
+    "@theia/markers": "latest",
+    "@theia/messages": "latest",
+    "@theia/monaco": "latest",
+    "@theia/navigator": "latest",
+    "@theia/preferences": "latest",
+    "@theia/process": "latest",
+    "@theia/terminal": "latest",
+    "@theia/workspace": "latest",
+    "myextension": "0.0.0"
+  },
+  "devDependencies": {
+    "@theia/cli": "latest",
+    "html-webpack-plugin": "^5.3.1",
+    "@theia/compression-webpack-plugin": "^3.0.0",
+    "circular-dependency-plugin": "^5.2.2",
+    "copy-webpack-plugin": "^8.1.1",
+    "webpack-cli": "^4.7.0",
+    "process": "^0.11.10"
+  },
+  "scripts": {
+    "prepare": "theia build --mode development",
+    "start": "theia start",
+    "watch": "theia build --watch --mode development"
+  },
+  "theia": {
+    "target": "browser"
+  }
+}
